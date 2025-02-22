@@ -5,47 +5,55 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Programming</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Whispers of the Luminaries"
+    img="/wotl.webp"
+    desc="After a successful demo release and Kickstarter campaign, Whispers of the Luminaries is now in full development and is scheduled to release in 2025."
+    url="wotl"
+    badge="FREE DEMO"
+
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Detective Dana المحققة دانة"
+    img="/detectivedana.webp"
+    desc="Part of a program to foster the gaming scene in the Arabic-speaking market, Detective Dana has a lot of hype around it and is expected to release in Summer 2025."
+    url="dana"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Solo developer</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="yabAI! chat"
+    img="/yabaichat.webp"
+    desc="Engage in a Japanese language conversation with a cute AI-powered anime girl. There are several tools to assist you in case you are learning the language, such as live dictionary and text display options."
+    url="yabaichat"
+    badge="FREE WITH OPENAI KEY"
   />
-  <div class="divider my-0"></div>
+
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Misc</div>
+  </div>
+
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Naninovel Scene Assistant"
+    img="/naninovel.webp"
+    desc="Developed and maintained since 2021, Naninovel Scene Assistant is the most popular extension for Naninovel that lets you easily modify objects in real time and copy their corresponding command and parameters directly into the clipboard."
+    url="sceneassistant"
+    badge="FREE DEMO"
   />
-  <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  title="Naninovel Post Process"
+  img="/naninovel.webp"
+  desc="Post processing commands for use within Naninovel."
+  url="postprocess"
+  badge="FREE DEMO"
+/>
 </BaseLayout>

@@ -4,16 +4,109 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Ida Immila</div>
+  </div>
+
+
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    I am a highly adaptable professional driven by creativity, curiosity, and a passion for problem-solving. With expertise in both technology and creative fields, I thrive on tackling projects from the ground up and continually seek opportunities to hone my skills beyond my core responsibilities.
+    <br><br>
+    Recently, I released my first solo game project, designed to support anxious language learners in practicing conversational skills using AI. I am excited to continue exploring the potential of the technology, with a particular focus on developing tools and experiences that showcase innovative and emerging aspects of the technology.
+    <br><br>
+    Outside of my work, I am constantly on the prowl for new experiences. I am particularly interested broadening my world view through various forms of media or travel, having solo backpacked to over 40 countries to this date.
   </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Work history</div>
+  </div>
+
+
+  <div class="time-line-container mb-10">
+
+    <TimeLineElement
+    title="Technical Support @ Naninovel"
+    subtitle="January 2021-Ongoing, Remote"
+    >
+    Provided product support  for customers of Naninovel, a 5-star rated extension for the Unity game engine. Many positive reviews have highlighted the helpfulness of the provided support. Also produced video updates on the extension.
+
+  </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Unity Developer, Programmer, Technical Artist and Designer @ VR Heaven"
+      subtitle="December 2023-Ongoing, Remote"
+    >
+    Fully responsible for bringing Whispers of the Luminaries, a murder mystery game, to life in cooperation with the lead designer. Released a full demo in summer 2024 which was pivotal in the game’s Kickstarter success (200% funded).
+
+    <div class="mb-6">
+      <!-- Link with button to the Steam page -->
+      <a href="/wotl" target="_blank" class="bg-gray-500 text-white py-1 px-4 rounded hover:bg-black-600">
+        Project Page
+      </a>
+    </div>
+
+  </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Unity Programmer @ Vicebeast studio"
+      subtitle="September 2023-Ongoing, Remote"
+    >
+    Working as the sole programmer in a team of 11 people, I was responsible for implementing core gameplay mechanics, implementing the UI assets and ensuring the game runs in Right-to-Left (RTL) reading mode.<br>
+    Gameplay footage of the game was showcased in winter 2024 to an audience of ~100k people in the Arabic-speaking market.
+
+    <div class="mb-6">
+      <!-- Link with button to the Steam page -->
+      <a href="/dana" target="_blank" class="bg-gray-500 text-white py-1 px-4 rounded hover:bg-black-600">
+        Project Page
+      </a>
+    </div>
+
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Unity Programmer @ Tidehead Studios" 
+      subtitle="May 2024-Ongoing, Remote"
+    >
+    Contracted to work on their upcoming game after a successful collaboration during Spooktober Jam in 2023. Implemented core gameplay mechanics including a clicker game as well as built the UI layout.
+    </TimeLineElement>
+
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+
+    <TimeLineElement
+    title="Solo developer, programmer, designer, 3D artist & animator, AI conversation designer & prompt engineer" 
+    subtitle="July 2024-Ongoing"
+  >
+  I am the solo developer for an AI-powered Japanese language tutor game that uses ChatGPT to generate conversations and translations and open-source libraries like JMDict and MeCab to power the live dictionary and real-time text analysis.
+
+  <div class="mb-6">
+    <!-- Link with button to the Steam page -->
+    <a href="/yabaichat" target="_blank" class="bg-gray-500 text-white py-1 px-4 rounded hover:bg-black-600">
+      Project Page
+    </a>
+  </div>
+</TimeLineElement>
+
+  <TimeLineElement
+  title="Programmer" 
+  subtitle="July 2021-Ongoing"
+>
+Released several successful plugins for the Naninovel extension, garnering 50+ stars on Github.
+
+<div class="mb-6">
+  <!-- Link with button to the Steam page -->
+  <a href="/sceneassistant" target="_blank" class="bg-gray-500 text-white py-1 px-4 rounded hover:bg-black-600">
+    Project Page
+  </a>
+</div>
+  </TimeLineElement>
+
+  <br>  <br>  <br>  <br>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -21,72 +114,29 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Arcada University of Applied Sciences"
+      subtitle="Bachelor's degree in Film and Media, Online Media"
     />
+
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Griffith University"
+      subtitle="Minor in Game and Interaction Design"
+    />
+
+    <TimeLineElement
+      title="Aarhus University"
+      subtitle="Minor in Game and Interaction Design"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
-
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+    <div class="text-3xl w-full font-bold">Languages</div>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+  <b>Fluent:</b> English, Norwegian, Swedish, Finnish
+  <br><b>Intermediate:</b> German, Danish
+  <br><b>Basic:</b> Japanese (JLPT N5), French, Russian, Northern Sami 
   </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
+  
 </BaseLayout>

@@ -11,68 +11,73 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <!-- <div class="text-xl py-1">Hey there 👋</div> -->
+    <div class="text-5xl font-bold">Ida Immila</div>
+    <!-- <div class="text-3xl py-3 font-bold">eeee</div> -->
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Hello~！ My name is Ida. I am a game developer, 3D & technical artist and programmer. I am passionate about visual novels and story games. I am available for all kinds of freelance work, please take a look around for more information. 
+
+        こんにちは～！イダと申します。
+        私はゲームクリエイターと3D＆テクニカルアーティストとゲームプログラマーです。ビジュアルノベルやストーリー重視のゲームが好きです！
+        フリーランスのお仕事を受けしていますので、ぜひ色々とご覧ください。
+
       </text>
     </div>
-    <div class="mt-8">
+
+
+    <!-- <div class="mt-8">
       <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
       <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>
     </div>
-  </div>
+  </div> -->
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Services</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Visual novel development"
+    img="/yabaichat.webp"
+    desc="Whether simple or complex, I can help you make your ideal visual novel that can be ported to most platforms."
+    url="visualnovel"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Unity / C# development"
+    img="/unity.webp"
+    desc="I possess extensive knowledge of Unity and C# programming."
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="3D character modelling"
+    img="/3dmodel.jpg"
+    desc="I specialize in anime style models. I offer full 3D models with rigging and animations."
+    url="3d"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Featured projects</div>
   </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  <HorizontalCard
+    title="Whispers of the Luminaries"
+    img="/wotl.webp"
+    desc="Whispers of the Luminaries is an idol-themed murder mystery visual novel blending beautiful narratives with powerful J-Rock music."
+    url="wotl"
+    badge="FREE DEMO"
+    />
+
+  <HorizontalCard
+    title="yabAI! chat"
+    img="/yabaichat.webp"
+    desc="Engage in a Japanese language conversation with a cute AI-powered anime girl. There are several tools to assist you in case you are learning the language, such as live dictionary and text display options."
+    url="yabaichat"
+    badge="FREE WITH OPENAI KEY"
+  />
+
+  
 </BaseLayout>

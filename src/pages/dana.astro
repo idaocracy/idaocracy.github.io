@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import { Image } from 'astro:assets';
+import dana from '../images/detectivedanabanner.webp';
+import PhotoGallery from "../components/PhotoGallery.jsx";
+
+---
+
+<BaseLayout title="Detective Dana المحققة دانة" sideBarActiveItemID="projects">
+
+  <Image src={dana} alt="Detective Dana المحققة دانة" class="w-full rounded-lg shadow-lg mb-6"/>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Detective Dana المحققة دانة</div>
+  </div>
+
+  <div class="mb-6">
+    <!-- Link with button to the Steam page -->
+    <a href="https://www.youtube.com/watch?v=A32pZJy89VM" target="_blank" class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600">
+      Gameplay Trailer
+    </a>
+  </div>
+
+  <h1>Photo Gallery</h1>
+  <PhotoGallery />
+
+  <div class="mb-10 text-justify">
+    Part of a cultural program to foster the gaming scene in the Arabic-speaking market, Detective Dana has a lot of hype around it and is expected to release for Android & iOS in Summer 2025. This game is developed by a multicultural team of 11 people, with me being the sole programmer. In this case, I work in close collaboration with the lead designer, writers and 2D & UI artists.
+    <br><br>
+    Inspired by Ace Attorney and Arabian mythology, Detective Dana is a mystery game that follows the titular character as she solves cases involving people from all corners of the world.
+    <br><br>
+    In development since late 2023, gameplay footage of the game, alongside animated cutscenes, was showcased in winter 2024 to an audience of ~100k people in the Arabic-speaking market. 
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A32pZJy89VM?si=EGBW-tKF5fSIp9uh&amp;start=1378" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">My Responsibilities</div>
+  </div>
+
+  - Implemented several game mechanics that were primarily inspired by other mystery games, such as Ace Attorney. These include interrogating witnesses, inspecting and presenting evidence and point and click investigation.
+  <br><br>
+  - Ensured the game is fully compatible with right-to-left Arabic writing. This meant that the layout of the UIs had to be mirrored in most cases.
+  <br><br>
+  - My extension, <a href="/sceneassistant">Naninovel Scene Assistant</a>, was used by the scenario writers to construct the scenes and extra tools were developed to assist with the camera direction.
+
+  <!-- <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+  </ul> -->
+</BaseLayout>
