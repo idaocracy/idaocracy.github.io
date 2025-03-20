@@ -2,10 +2,11 @@
 const { title, img, desc, url, badge, tags } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
+import { slide } from "astro:transitions";
 ---
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out"
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out" transition:animate={slide({ duration: "0.4s" })}
 >
   <a href={url} target="_self">
     <div class="hero-content flex-col md:flex-row">
