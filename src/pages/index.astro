@@ -2,8 +2,10 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+// import createSlug from "../lib/createSlug"
 import { SEO } from "astro-seo";
+import { ViewTransitions } from "astro:transitions";
+
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -13,10 +15,10 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
 
-  <!-- <head>
+  <head>
+
+    <ViewTransitions />
     <SEO
-      title="Visual novel developer | Unity & C# programmer | Technical artist | 3D artist | Content Creator"
-      description="A highly versatile game developer, Unity & C# programmer, technical and 3D artist, I love to express myself creatively and promote creativity through social media, livestreaming and Youtube content creation"
       openGraph={{
         basic: {
           title: "Visual novel developer | Unity & C# programmer | Technical artist | 3D artist | Content Creator",
@@ -41,7 +43,7 @@ const last_posts = posts.slice(0, 3);
         ],
       }}
     />
-  </head> -->
+  </head>
 
   <div class="pb-12 mt-5">
     <div class="text-5xl py-3 font-bold">Hello~！ <br>My name is Ida. </div>
@@ -112,7 +114,7 @@ const last_posts = posts.slice(0, 3);
   
   
     <div class="flex justify-center">
-      <a href="mailto:ida.idaot@gmail.com"target="_blank" class="bg-gray-500 text-white py-2 px-6 rounded hover:bg-blue-600">
+      <a href="mailto:ida.idaot@gmail.com"target="_blank" class="bg-gray-500 text-xl text-white py-2 px-6 rounded hover:bg-blue-600">
         Contact me
       </a>
     </div>
@@ -128,7 +130,7 @@ const last_posts = posts.slice(0, 3);
   </div> -->
 
   <div>
-    <div class="text-5xl w-full font-bold mb-5 mt-10">Services</div>
+    <div class="text-4xl w-full font-bold mb-5 mt-10">Services</div>
   </div>
 
   <HorizontalCard
@@ -157,7 +159,7 @@ const last_posts = posts.slice(0, 3);
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Featured projects</div>
+    <div class="text-4xl w-full font-bold mb-5 mt-10">Featured projects</div>
   </div>
 
   <HorizontalCard
@@ -176,4 +178,24 @@ const last_posts = posts.slice(0, 3);
     badge="FREE WITH OPENAI KEY"
   />
   
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Detective Dana المحققة دانة"
+    img="/detectivedana.webp"
+    desc="Part of a program to foster the gaming scene in the Arabic-speaking market, Detective Dana has a lot of hype around it and is expected to release in Summer 2025."
+    url="dana"
+  />
+  
+  <HorizontalCard 
+    title="Naninovel Scene Assistant"
+    img="/naninovel.webp"
+    desc="Developed and maintained since 2021, Naninovel Scene Assistant is the most popular extension for Naninovel that lets you easily modify objects in real time and copy their corresponding command and parameters directly into the clipboard."
+    url="sceneassistant"
+    badge="FREE DEMO"
+  />
+
+  <main transition:animate="slide">
+    Test
+  </main>
+
 </BaseLayout>
