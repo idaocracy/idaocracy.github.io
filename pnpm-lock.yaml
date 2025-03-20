@@ -20,6 +20,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.5
         version: 5.1.5(astro@4.16.18(rollup@4.34.8)(typescript@5.7.3))(tailwindcss@3.4.17)
+      '@fontsource/raleway-dots':
+        specifier: ^5.2.5
+        version: 5.2.5
       astro:
         specifier: ^4.16.18
         version: 4.16.18(rollup@4.34.8)(typescript@5.7.3)
@@ -363,6 +366,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/raleway-dots@5.2.5':
+    resolution: {integrity: sha512-QmYxGmDsXr2XssDWXP21PKRZNcwKqJwl7kgMvyI58bSM/aluxMgZwa6rZmj11HJDSFmWLV2ONih3wUJVGs0H6A==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2939,6 +2945,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource/raleway-dots@5.2.5': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

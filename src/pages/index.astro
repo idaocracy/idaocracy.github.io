@@ -14,6 +14,7 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 const last_posts = posts.slice(0, 3);
 
 ---
+
 <GoogleAnalytics id="G-V6WDH8R29K" />
 <BaseLayout sideBarActiveItemID="home">
 
@@ -47,6 +48,9 @@ const last_posts = posts.slice(0, 3);
     />
   </head>
 
+<!-- 
+  <h1 class="text-4xl">Hello, Astro!</h1> -->
+  
   <div class="pb-12 mt-5">
     <div class="text-5xl py-3 font-bold">Hello~！ <br>My name is Ida. </div>
     <div class="py-2">

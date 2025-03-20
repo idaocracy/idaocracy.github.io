@@ -17,6 +17,7 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.5",
+    "@fontsource/raleway-dots": "^5.2.5",
     "astro": "^4.16.18",
     "astro-analytics": "^2.7.0",
     "astro-seo": "^0.8.4",
